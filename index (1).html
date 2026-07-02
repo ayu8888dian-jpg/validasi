@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+HANTOGEL • BANK VALIDATOR
+
+</title>
+
+<!-- CSS -->
+
+<link
+rel="stylesheet"
+href="style.css">
+
+<!-- Font Awesome -->
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- Google Font -->
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!--=========================
+WRAPPER
+==========================-->
+
+<div class="wrapper">
+
+<!--=========================
+HEADER
+==========================-->
+
+<header class="header">
+
+<div class="header-left">
+
+<button
+class="menu-button">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<div class="logo">
+
+<div class="logo-icon">
+
+<i class="fa-solid fa-crown"></i>
+
+</div>
+
+<div class="logo-text">
+
+<h1>
+
+HANTOGEL
+
+</h1>
+
+<span>
+
+BANK VALIDATOR DASHBOARD
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="header-right">
+
+<button>
+
+<i class="fa-solid fa-gear"></i>
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-expand"></i>
+
+</button>
+
+<button>
+
+<i class="fa-solid fa-user"></i>
+
+</button>
+
+</div>
+
+</header>
+
+<!--=========================
+CONTENT
+==========================-->
+
+<div class="container">
+
+<!--=========================
+PASTE DATA
+==========================-->
+
+<div class="card">
+
+<div class="card-title">
+
+<i class="fa-solid fa-paste"></i>
+
+<h2>
+
+PASTE DATA
+
+</h2>
+
+</div>
+
+<textarea
+
+id="pasteData"
+
+placeholder="Silakan paste data validasi di sini...">
+
+</textarea>
+
+<div class="button-group">
+
+<button
+id="processBtn"
+class="btn btn-orange">
+
+<i class="fa-solid fa-play"></i>
+
+PROSES DATA
+
+</button>
+
+<button
+id="resetBtn"
+class="btn btn-gray">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+RESET DATA
+
+</button>
+
+<button
+id="exportBtn"
+class="btn btn-green">
+
+<i class="fa-solid fa-file-excel"></i>
+
+EXPORT CSV
+
+</button>
+
+</div>
+
+</div>
+<!--====================================
+TOTAL VALIDASI BANK
+=====================================-->
+
+<div class="card">
+
+    <div class="card-title">
+
+        <i class="fa-solid fa-building-columns"></i>
+
+        <h2>TOTAL VALIDASI BANK</h2>
+
+    </div>
+
+    <div class="table-responsive">
+
+        <table id="bankTable">
+
+            <thead>
+
+                <tr>
+
+                    <th class="sticky-column">
+                        TOTAL
+                    </th>
+
+                    <th>BCA</th>
+
+                    <th>BNI</th>
+
+                    <th>BRI</th>
+
+                    <th>BSI</th>
+
+                    <th>MANDIRI</th>
+
+                    <th>DANAMON</th>
+
+                    <th>CIMB</th>
+
+                    <th>OCBC</th>
+
+                    <th>MEGA</th>
+
+                    <th>SINARMAS</th>
+
+                    <th>PERMATA</th>
+
+                    <th>PANIN</th>
+
+                    <th>BANK JAGO</th>
+
+                    <th>MAYBANK</th>
+
+                    <th>SEABANK</th>
+
+                    <th>OVO</th>
+
+                    <th>GOPAY</th>
+
+                    <th>DANA</th>
+
+                    <th>LINKAJA</th>
+
+                    <th>ALLOBANK</th>
+
+                    <th width="90">
+
+                        COPY
+
+                    </th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td
+                        id="totalValidasi"
+                        class="sticky-column value-total">
+
+                        0
+
+                    </td>
+
+                    <td id="bca">0</td>
+
+                    <td id="bni">0</td>
+
+                    <td id="bri">0</td>
+
+                    <td id="bsi">0</td>
+
+                    <td id="mandiri">0</td>
+
+                    <td id="danamon">0</td>
+
+                    <td id="cimb">0</td>
+
+                    <td id="ocbc">0</td>
+
+                    <td id="mega">0</td>
+
+                    <td id="sinarmas">0</td>
+
+                    <td id="permata">0</td>
+
+                    <td id="panin">0</td>
+
+                    <td id="bankjago">0</td>
+
+                    <td id="maybank">0</td>
+
+                    <td id="seabank">0</td>
+
+                    <td id="ovo">0</td>
+
+                    <td id="gopay">0</td>
+
+                    <td id="dana">0</td>
+
+                    <td id="linkaja">0</td>
+
+                    <td id="allobank">0</td>
+
+                    <td>
+
+                        <button
+                            id="copyBtn"
+                            class="copy-button"
+                            title="Copy ke Google Sheets">
+
+                            <i class="fa-regular fa-copy"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+<!--====================================
+DASHBOARD INFO
+=====================================-->
+
+<div class="dashboard">
+
+    <div class="dashboard-card blue">
+
+        <div class="dashboard-icon">
+
+            <i class="fa-solid fa-building-columns"></i>
+
+        </div>
+
+        <div class="dashboard-content">
+
+            <span>Total Bank</span>
+
+            <h2 id="totalBank">
+
+                20
+
+            </h2>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-card green">
+
+        <div class="dashboard-icon">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+        <div class="dashboard-content">
+
+            <span>Total Validasi</span>
+
+            <h2 id="grandTotal">
+
+                0
+
+            </h2>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-card orange">
+
+        <div class="dashboard-icon">
+
+            <i class="fa-solid fa-clock"></i>
+
+        </div>
+
+        <div class="dashboard-content">
+
+            <span>Jam Server</span>
+
+            <h2 id="clock">
+
+                00:00:00
+
+            </h2>
+
+        </div>
+
+    </div>
+
+    <div class="dashboard-card red">
+
+        <div class="dashboard-icon">
+
+            <i class="fa-solid fa-wifi"></i>
+
+        </div>
+
+        <div class="dashboard-content">
+
+            <span>Status</span>
+
+            <h2 class="status-online">
+
+                <span class="online-dot"></span>
+
+                ONLINE
+
+            </h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<!--====================================
+LOADING
+=====================================-->
+
+<div
+id="loading"
+class="loading">
+
+    <div class="loader"></div>
+
+    <h3>
+
+        Memproses Data...
+
+    </h3>
+
+</div>
+
+<!--====================================
+TOAST
+=====================================-->
+
+<div
+id="toast"
+class="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span
+    id="toastMessage">
+
+        Berhasil
+
+    </span>
+
+</div>
+
+<!--====================================
+FOOTER
+=====================================-->
+
+<footer>
+
+    <p>
+
+        © 2026 HANTOGEL BANK VALIDATOR
+
+    </p>
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1053 @@
+/*====================================================
+HANTOGEL BANK VALIDATOR
+STYLE.CSS
+VERSION 2.0
+PART B1
+=====================================================*/
+
+/*==============================
+GOOGLE FONT
+==============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==============================
+RESET
+==============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#edf2f7;
+
+    color:#333;
+
+}
+
+/*==============================
+SCROLLBAR
+==============================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+    height:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff8500;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#e6e6e6;
+
+}
+
+/*==============================
+WRAPPER
+==============================*/
+
+.wrapper{
+
+    width:100%;
+    min-height:100vh;
+
+}
+
+/*==============================
+HEADER
+==============================*/
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    width:100%;
+
+    height:75px;
+
+    background:#ff8500;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.15);
+
+}
+
+/*==============================
+HEADER LEFT
+==============================*/
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.menu-button{
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.18);
+
+    transition:.3s;
+
+}
+
+.menu-button:hover{
+
+    background:#fff;
+
+    color:#ff8500;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.logo-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:#ff8500;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+.logo-text h1{
+
+    color:#fff;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.logo-text span{
+
+    color:#fff;
+
+    opacity:.9;
+
+    font-size:13px;
+
+}
+
+/*==============================
+HEADER RIGHT
+==============================*/
+
+.header-right{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.header-right button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.18);
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.header-right button:hover{
+
+    background:#fff;
+
+    color:#ff8500;
+
+}
+
+/*==============================
+CONTAINER
+==============================*/
+
+.container{
+
+    width:96%;
+
+    margin:30px auto;
+
+}
+
+/*==============================
+CARD
+==============================*/
+
+.card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*==============================
+CARD TITLE
+==============================*/
+
+.card-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:20px;
+
+}
+
+.card-title i{
+
+    color:#ff8500;
+
+    font-size:28px;
+
+}
+
+.card-title h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/*==============================
+TEXTAREA
+==============================*/
+
+textarea{
+
+    width:100%;
+
+    height:220px;
+
+    border:2px solid #e5e7eb;
+
+    border-radius:16px;
+
+    resize:none;
+
+    outline:none;
+
+    padding:18px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+textarea:focus{
+
+    border-color:#ff8500;
+
+    box-shadow:0 0 15px rgba(255,133,0,.18);
+
+}
+
+/*==============================
+BUTTON GROUP
+==============================*/
+
+.button-group{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.btn{
+
+    border:none;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.btn i{
+
+    margin-right:8px;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn-orange{
+
+    background:#ff8500;
+
+    color:#fff;
+
+}
+
+.btn-gray{
+
+    background:#e5e7eb;
+
+    color:#333;
+
+}
+
+.btn-green{
+
+    background:#22c55e;
+
+    color:#fff;
+
+}
+/*====================================================
+TABLE
+PART B2
+=====================================================*/
+
+/*==============================
+TABLE RESPONSIVE
+==============================*/
+
+.table-responsive{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    border-radius:18px;
+
+    border:1px solid #ececec;
+
+    background:#fff;
+
+}
+
+/*==============================
+TABLE
+==============================*/
+
+#bankTable{
+
+    width:100%;
+
+    min-width:2150px;
+
+    border-collapse:collapse;
+
+}
+
+/*==============================
+HEADER TABLE
+==============================*/
+
+#bankTable thead tr{
+
+    background:#ff8500;
+
+}
+
+#bankTable thead th{
+
+    color:#fff;
+
+    padding:16px 18px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+    border-right:1px solid rgba(255,255,255,.15);
+
+}
+
+#bankTable thead th:last-child{
+
+    border-right:none;
+
+}
+
+/*==============================
+BODY
+==============================*/
+
+#bankTable tbody td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border:1px solid #ececec;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    background:#fff;
+
+    transition:.25s;
+
+}
+
+#bankTable tbody tr:nth-child(even){
+
+    background:#fafafa;
+
+}
+
+#bankTable tbody tr:hover td{
+
+    background:#fff7ee;
+
+}
+
+/*==============================
+TOTAL COLUMN
+==============================*/
+
+.value-total{
+
+    background:#fff3df !important;
+
+    color:#ff8500;
+
+    font-size:28px !important;
+
+    font-weight:700 !important;
+
+}
+
+/*==============================
+STICKY COLUMN
+==============================*/
+
+.sticky-column{
+
+    position:sticky;
+
+    left:0;
+
+    z-index:5;
+
+    background:#ffffff;
+
+}
+
+thead .sticky-column{
+
+    background:#ff8500;
+
+    z-index:10;
+
+}
+
+tbody .sticky-column{
+
+    background:#fff3df;
+
+}
+
+/*==============================
+COPY BUTTON
+==============================*/
+
+.copy-button{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ff8500;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:17px;
+
+}
+
+.copy-button:hover{
+
+    background:#ff9d2d;
+
+    transform:scale(1.08);
+
+}
+
+.copy-button:active{
+
+    transform:scale(.94);
+
+}
+
+/*==============================
+NUMBER STYLE
+==============================*/
+
+#bankTable tbody td:not(.sticky-column){
+
+    color:#555;
+
+}
+
+#bankTable tbody td:not(.sticky-column):hover{
+
+    color:#ff8500;
+
+    font-weight:700;
+
+}
+
+/*==============================
+SMOOTH SCROLL
+==============================*/
+
+.table-responsive{
+
+    scroll-behavior:smooth;
+
+}
+
+/*==============================
+SHADOW TABLE
+==============================*/
+
+.table-responsive{
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.05);
+
+}
+/*====================================================
+DASHBOARD
+PART B3
+=====================================================*/
+
+/*==============================
+DASHBOARD GRID
+==============================*/
+
+.dashboard{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:22px;
+
+    margin-top:30px;
+
+}
+
+/*==============================
+CARD
+==============================*/
+
+.dashboard-card{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+    transition:.30s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/*==============================
+ICON
+==============================*/
+
+.dashboard-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#ffffff;
+
+    font-size:24px;
+
+}
+
+.dashboard-content{
+
+    flex:1;
+
+}
+
+.dashboard-content span{
+
+    display:block;
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-bottom:5px;
+
+}
+
+.dashboard-content h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/*==============================
+CARD COLOR
+==============================*/
+
+.blue .dashboard-icon{
+
+    background:#2563eb;
+
+}
+
+.green .dashboard-icon{
+
+    background:#16a34a;
+
+}
+
+.orange .dashboard-icon{
+
+    background:#ff8500;
+
+}
+
+.red .dashboard-icon{
+
+    background:#ef4444;
+
+}
+
+/*==============================
+STATUS ONLINE
+==============================*/
+
+.status-online{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#16a34a;
+
+    font-size:20px;
+
+}
+
+.online-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:#16a34a;
+
+    animation:pulse 1.4s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.7);
+
+        opacity:.35;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/*====================================================
+LOADING
+=====================================================*/
+
+.loading{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(5px);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:999999;
+
+}
+
+.loader{
+
+    width:75px;
+
+    height:75px;
+
+    border:7px solid #ececec;
+
+    border-top:7px solid #ff8500;
+
+    border-radius:50%;
+
+    animation:loading 1s linear infinite;
+
+}
+
+.loading h3{
+
+    margin-top:20px;
+
+    color:#ff8500;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+@keyframes loading{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*====================================================
+TOAST
+=====================================================*/
+
+.toast{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    background:#16a34a;
+
+    color:#fff;
+
+    padding:18px 22px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(60px);
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+
+    z-index:999999;
+
+}
+
+.toast.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.toast i{
+
+    font-size:22px;
+
+}
+
+/*====================================================
+FOOTER
+=====================================================*/
+
+footer{
+
+    margin-top:35px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+/*====================================================
+RESPONSIVE
+=====================================================*/
+
+@media(max-width:1400px){
+
+    .dashboard{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .header{
+
+        padding:15px;
+
+        height:auto;
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .header-left{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .header-right{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .button-group{
+
+        flex-direction:column;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .dashboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+    textarea{
+
+        height:180px;
+
+    }
+
+    .logo-text h1{
+
+        font-size:20px;
+
+    }
+
+    .card-title h2{
+
+        font-size:22px;
+
+    }
+
+}
